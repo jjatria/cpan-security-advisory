@@ -15,3 +15,20 @@
     - CVE-2019-1010161
   affected_versions: "<0.023"
   fixed_versions: ">=0.023"
+- id: CPANSA-Crypt-JWT-2019-02
+  distribution: Crypt-JWT
+  reported: 2019-03-20
+  severity: high
+  description: >
+    Perl Crypt::JWT prior to 0.023 is affected by: Incorrect Access
+    Control. The impact is: allow attackers to bypass authentication
+    by providing a token by crafting with hmac(). The component is:
+    JWT.pm, line 614. The attack vector is: network connectivity. The
+    fixed version is: after commit b98a59b42ded9f9e51b2560410106207c2152d6c.
+  references:
+    - https://www.openwall.com/lists/oss-security/2018/09/07/1
+    - https://github.com/DCIT/perl-Crypt-JWT/commit/b98a59b42ded9f9e51b2560410106207c2152d6c
+  cves:
+    - CVE-2019-1010263
+  affected_versions: "<0.023"
+  fixed_versions: ">=0.023"
